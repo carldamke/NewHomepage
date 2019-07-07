@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>C D </title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script>
+            var success = "entry successful"
+            
+             function codeEntry () {
+                var entry = prompt("key")
+                
+                if (entry == "clemensch") {
+                    alert(success);
+                    window.location.href = "secret/sec.html";
+                } else if (entry == "ellafloh") {
+                    alert(success);
+                    window.location.href = "secret/pig.html";
+                } else {
+                    alert ("stop system abuse");
+                    window.location.reload(true);
+                }
+            }
+        </script>
+    </head>
+    <body onkeypress="codeEntry()">
+        <center>
+            <br><br>
+            <div class="name">
+                    <h1>C D</h1>
+            </div>
+            <br><br><br><br><br>
+            <div class="elements">
+                <ul>
+                    <li id="p1"><a href="javascript:alert('Coming soon(ish)™.')"><p>Gallery</p></a></li>
+                    <li id="p2"><a href="javascript:alert('Coming soon(ish)™.')"><p>Links</p></a></li>
+                    <li id="p3"><a href="javascript:alert('Coming soon(ish)™.')"><p>About</p></a></li>
+                </ul>
+            </div>
+        </center>
+    </body>
+</html>
