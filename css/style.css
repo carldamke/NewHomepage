@@ -9,6 +9,42 @@ body{
     height:100vh
 }
 
+div.upperframe {
+    background-color: #111111;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 20px;
+}
+
+div.lowerframe {
+    background-color: #111111;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+}
+
+div.rightframe {
+    background-color: #111111;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 20px;
+}
+
+div.leftframe {
+    background-color: #111111;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+}
+
 div.name {
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;
