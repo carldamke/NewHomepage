@@ -1,0 +1,299 @@
+body{
+    background-color:#000;
+    color:#fff;
+    font-size:20px;
+    font-family:Roboto ,sans-serif;
+    margin:0;
+    padding:0;
+    min-width:100vw;
+    height:100vh
+}
+
+div.upperframe {
+    background-color: #111;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 20px;
+    overflow: hidden;
+}
+
+div.lowerframe {
+    background-color: #111;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    overflow: hidden;
+}
+
+div.rightframe {
+    background-color: #111;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 20px;
+    overflow: hidden;
+}
+
+div.leftframe {
+    background-color: #111;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    overflow: hidden;
+}
+
+div.name {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 6s;
+    -moz-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+div.name h1 {
+    font-weight: 300;
+    color: #ffffff;
+}
+
+div.elements {
+    text-align: center;
+}
+
+div.elements p {
+    font-weight: 300;
+    color: #ffffff;
+    font-family: Roboto ,sans-serif;
+    font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  animation-name: p1;
+  -webkit-animation-name: p1;
+  -moz-animation-name: p1;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+}
+
+
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+  animation: linkFade 2s;
+  -webkit-animation: linkFade 2s;
+  -moz-animation: linkFade 2s;
+}
+
+.gallery {
+    animation-name: galtrans;
+    -webkit-animation-name: galtrans;
+    -moz-animation-name: galtrans;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    opacity: 0;
+}
+
+.gallery-active {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    background-color: #000000;
+    opacity: 1;
+}
+
+.gallery-container {
+    animation-name: galcontrans;
+    -webkit-animation-name: galcontrans;
+    -moz-animation-name: galcontrans;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.gallery-container-active {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+p.galleryname {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: Roboto ,sans-serif;
+}
+
+#leave {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    opacity: 1;
+    width: 100%;
+    webkit-animation-name: fadeInCross;
+    -moz-animation-name: fadeInCross;
+    animation-name: fadeInCross;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+#leave:hover {
+    animation: leavehover 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: leavehover 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: leavehover 1s;
+    -moz-animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+        
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes fadeInCross {
+    0% {opacity: 0;}
+    50% {opacity: 0.125;}
+    100% {opacity: 0;}
+}
+        
+@keyframes fadeInCross {
+    0% {opacity: 0;}
+    50% {opacity: 0.125;}
+    100% {opacity: 0;}
+}
+
+@-moz-keyframes fadeInCross {
+    0% {opacity: 0;}
+    50% {opacity: 0.125;}
+    100% {opacity: 0;}
+}
+
+@keyframes linkFade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes linkFade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes linkFade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes p1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes p1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes p1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes galtrans {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes galtrans {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes galtrans {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes galcontrans {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes galcontrans {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes galcontrans {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes leavehover {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes leavehover {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes leavehover {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

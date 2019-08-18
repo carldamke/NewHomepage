@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>C D </title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             var success = "entry successful"
             
@@ -22,6 +24,7 @@
                     window.location.reload(true);
                 }
             }
+            
         </script>
     </head>
     <body onkeypress="codeEntry()">
@@ -33,15 +36,43 @@
             <br><br><br><br><br>
             <div class="elements">
                 <ul>
-                    <li id="p1"><a href="javascript:alert('Coming soon(ish)™.')"><p>Gallery</p></a></li>
-                    <li id="p2"><a href="javascript:alert('Coming soon(ish)™.')"><p>Links</p></a></li>
-                    <li id="p3"><a href="javascript:alert('Coming soon(ish)™.')"><p>About</p></a></li>
+                    <li><a href="#" id="p1"><p>Gallery</p></a></li>
+                    <li><a href="https://github.com/carldamke" id="p2"><p>Links</p></a></li>
+                    <li><a href="javascript:alert('Coming soon(ish)â„¢.')" id="p3"><p>About</p></a></li>
                 </ul>
             </div>
         </center>
+        <div class="gallery">
+            <div class="gallery-container">
+                <br><br>
+                <p class="galleryname">Gallery</p>
+                <br><br>
+                <br><br><br><br><br><br><br><br><br><br>
+                <a href="#" id="leave">
+                    <img style="width: 50px; height: 50px" src="data/x.png" alt="close gallery">
+                </a>
+            </div>
+        </div>
+        <script>
+            $(".gallery").hide();
+            
+            $("#p1").click(function() {
+                $('.gallery').show();
+                $('.gallery').toggleClass('gallery-active');
+                
+                $('.gallery').toggleClass('gallery-container-active');
+            });
+            
+            $("#leave").click(function() {
+                $('.gallery').toggleClass('gallery-active');
+                
+                $('.gallery').toggleClass('gallery-container-active');
+                $('.gallery').hide();
+            });
+        </script>
         <div class="frame">
             <div class="upperframe">
-                <!-- No Elements -->
+                <!--No Elements -->
             </div>
             <div class="lowerframe">
                 <!-- No Elements -->
